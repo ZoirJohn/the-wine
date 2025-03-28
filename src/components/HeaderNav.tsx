@@ -8,7 +8,7 @@ const HeaderNav = () => {
         useScrollLock(isOpen)
         return (
                 <>
-                        <div className='flex items-center sm:hidden ml-2 absolute top-full left-1/3 -translate-y-4' onClick={() => setIsOpen(!isOpen)}>
+                        <div className='flex items-center sm:hidden ml-2 absolute top-full left-1/2 -translate-y-[17px] -translate-x-[70%]' onClick={() => setIsOpen(!isOpen)}>
                                 <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e3e3e3' className='w-10 h-10'>
                                         <path d='M480-360 280-560h400L480-360Z' />
                                 </svg>

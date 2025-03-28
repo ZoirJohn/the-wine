@@ -7,7 +7,7 @@ const Header = () => {
         return (
                 <header className='relative z-10'>
                         <div className='_container tracking-[3.15px] text-[7px] font-regular text-center py-2 relative z-10 bg-black'>
-                                ДОСТУПНА СРОЧНАЯ ДОСТАВКА ПО МОСКВЕ -{' '}
+                                ДОСТУПНА СРОЧНАЯ ДОСТАВКА ПО МОСКВЕ -
                                 <Link href='/' className='font-semibold underline'>
                                         ДЕТАЛЬНЫЕ УСЛОВИЯ
                                 </Link>
