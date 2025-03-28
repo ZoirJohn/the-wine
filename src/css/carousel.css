@@ -1,0 +1,102 @@
+.embla {
+        max-width: 100%;
+        margin: auto auto .25rem auto;
+        --slide-height: 285px;
+        --slide-spacing: 1rem;
+        --slide-size: 100%;
+        position: relative;
+}
+.embla__viewport {
+        overflow: hidden;
+}
+.embla__container {
+        display: flex;
+        touch-action: pan-y pinch-zoom;
+        margin-left: calc(var(--slide-spacing) * -1);
+}
+.embla__slide {
+        flex: 0 0 var(--slide-size);
+        padding-left: var(--slide-spacing);
+        height: var(--slide-height);
+}
+.embla__controls {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        max-width: 1300px;
+        width: 100%;
+        bottom: 0;
+        height: 45px;
+}
+.embla__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        bottom: 110px;
+}
+.embla__button {
+        appearance: none;
+        background-color: transparent;
+        touch-action: manipulation;
+        display: inline-flex;
+        text-decoration: none;
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        width: 3.6rem;
+        height: 3.6rem;
+        z-index: 1;
+        border-radius: 50%;
+        color: var(--text-body);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.embla__button:disabled {
+        color: white;
+}
+.embla__button__svg {
+        width: 35%;
+        height: 35%;
+}
+.embla__dots {
+        margin: 0 auto;
+        display: flex;
+        gap: 0 10px;
+        flex-wrap: wrap;
+        align-items: center;
+}
+.embla__dot {
+        appearance: none;
+        background-color: transparent;
+        touch-action: manipulation;
+        display: inline-flex;
+        text-decoration: none;
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        width: 10px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+}
+.embla__dot:after {
+        box-shadow: inset 0 0 0 1px #c4c4c4;
+        background: #c4c4c4;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        content: '';
+}
+.embla__dot--selected:after {
+        box-shadow: inset 0 0 0 1px #9d0000;
+        background: #9d0000;
+}

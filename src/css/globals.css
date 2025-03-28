@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+:root {
+        --width: 1300px;
+        --red: #7a0000;
+        --black: #0a0a0a;
+        --brownie: #1b1918;
+}
+@layer components {
+        .bigfont {
+                @apply text-sm;
+        }
+        .smallfont {
+                @apply text-[9px] text-gray-50;
+        }
+        ._container {
+                @apply max-w-[var(--width)] mx-auto px-11 max-lg:px-2;
+        }
+}
+@theme inline {
+        --font-serif: var(--inter);
+        --font-sans: var(--alex);
+        --color-maroon: var(--red);
+        --color-dark: var(--black);
+        --color-brownie: var(--brownie);
+        --breakpoint-xs: 26.5rem;
+        --breakpoint-cnt: 81.25rem;
+}
+body {
+        background: #000;
+        color: #fff;
+}
+h1 {
+        font-size: 48px;
+}
+h2 {
+        font-size: 38px;
+}
+h3 {
+        font-size: 21px;
+}
+@media (max-width: 992px) {
+        h3 {
+                font-size: 18px;
+        }
+}
+@media (max-width: 768px) {
+        h1 {
+                font-size: 38px;
+        }
+        h2 {
+                font-size: 28px;
+        }
+}
