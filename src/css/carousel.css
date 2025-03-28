@@ -21,20 +21,20 @@
 }
 .embla__controls {
         display: flex;
-        align-items: center;
+        align-items: start;
         position: absolute;
         left: 0;
         max-width: 1300px;
         width: 100%;
         bottom: 0;
-        height: 45px;
+        height: 35px;
 }
 .embla__buttons {
         display: flex;
         justify-content: space-between;
         width: 100%;
         position: absolute;
-        bottom: 110px;
+        bottom: 115px;
 }
 .embla__button {
         appearance: none;

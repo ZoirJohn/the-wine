@@ -1,5 +1,5 @@
+import Card from '@/components/Card'
 import Carousel from '@/components/Carousel'
-import Image from 'next/image'
 
 const HomePage = () => {
         return (
@@ -24,9 +24,10 @@ const HomePage = () => {
                                 </div>
                         </section>
                         <section className=''>
-                                <div className='_container bg-brownie pt-18'>
-                                        <div className='grid grid-cols-3'>
-                                                <div className='flex max-md:hidden'>
+                                <div className='_container bg-brownie pt-18 flex justify-between'>
+                                        <aside className='min-w-[230px] h-20'></aside>
+                                        <div className='flex flex-col basis-[877px]'>
+                                                <div className='flex max-md:hidden col-span-3 mb-16'>
                                                         <a className='capitalize mr-auto'>Бестселлеры</a>
                                                         <a className='capitalize'>цена</a>
                                                         <a className='capitalize mx-10'>Производитель a-z</a>
@@ -36,29 +37,13 @@ const HomePage = () => {
                                                                 <a className='capitalize opacity-50'>популярные</a>
                                                         </div>
                                                 </div>
-                                                <div className='flex flex-col gap-y-5'>
-                                                        <div className='w-59 flex'>
-                                                                <div className='bg-black relative w-full h-75 before:absolute before:h-10 before:w-1 before:bg-maroon before:right-0'>
-                                                                        <Image
-                                                                                src='/wine.png'
-                                                                                alt='wine'
-                                                                                width={99}
-                                                                                height={349}
-                                                                                loading='lazy'
-                                                                                className='block left-1/2 -translate-x-1/2 absolute bottom-0'
-                                                                        />
-                                                                </div>
-                                                        </div>
-                                                        <div>
-                                                                <h4 className='uppercase tracking-[3px] w-1/2 mb-5'>L’ERMITE HERMITAGE</h4>
-                                                                <p>2009/0.75 л</p>
-                                                                <p>франция/M.CHAPOUTIER</p>
-                                                                <p>ЦЕНА ЗА 1 ШТ</p>
-                                                                <p>90 000 р</p>
-                                                        </div>
+                                                <div className='grid grid-cols-[repeat(3,240px)] justify-between gap-y-25'>
+                                                        <Card />
+                                                        <Card />
+                                                        <Card />
+                                                        <Card />
                                                 </div>
                                         </div>
-                                        <aside></aside>
                                 </div>
                         </section>
                 </>
