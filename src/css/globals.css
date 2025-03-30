@@ -16,6 +16,9 @@
         ._container {
                 @apply max-w-[var(--width)] mx-auto px-11 max-lg:px-2;
         }
+        .clickButton {
+                @apply inline-block bg-maroon;
+        }
 }
 @theme inline {
         --font-serif: var(--inter);
@@ -39,10 +42,10 @@ h2 {
 h3 {
         font-size: 21px;
 }
-a{
+a {
         cursor: pointer;
 }
-.activeChoice{
+.activeChoice {
         opacity: 1;
 }
 @media (max-width: 992px) {

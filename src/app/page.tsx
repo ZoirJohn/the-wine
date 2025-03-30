@@ -1,5 +1,6 @@
 import Card from '@/components/Card'
 import Carousel from '@/components/Carousel'
+import Dropdown from '@/components/ui/Dropdown'
 
 const HomePage = () => {
         return (
@@ -25,7 +26,11 @@ const HomePage = () => {
                         </section>
                         <section className=''>
                                 <div className='_container bg-brownie pt-18 flex justify-between'>
-                                        <aside className='min-w-[230px] h-20'></aside>
+                                        <aside className='min-w-[230px] h-20'>
+                                                <div>
+                                                        <Dropdown open={true}/>
+                                                </div>
+                                        </aside>
                                         <div className='flex flex-col basis-[877px]'>
                                                 <div className='flex max-md:hidden col-span-3 mb-16'>
                                                         <a className='capitalize mr-auto'>Бестселлеры</a>
