@@ -1,6 +1,7 @@
 import Card from '@/components/Card'
 import Carousel from '@/components/Carousel'
 import Dropdown from '@/components/ui/Dropdown'
+import Filter from '@/components/ui/Filter'
 
 const HomePage = () => {
         return (
@@ -34,12 +35,12 @@ const HomePage = () => {
                                                 </div>
                                         </aside>
                                         <div className='flex flex-col basis-[877px]'>
-                                                <div className='flex col-span-3 mb-16 max-tablet-lg:mb-10 max-md:hidden '>
-                                                        <a className='capitalize mr-auto'>Бестселлеры</a>
-                                                        <a className='capitalize'>цена</a>
-                                                        <a className='capitalize mx-10 max-tablet-lg:mx-5'>Производитель a-z</a>
-                                                        <a className='capitalize'>винтаж</a>
-                                                        <div className='relative flex gap-x-5 before:block before:absolute before:w-1 before:h-1 before:bg-white before:rounded-full before:left-[40%] before:top-1/2 before:-translate-y-1/2 ml-16 max-tablet-lg:ml-8'>
+                                                <div className='flex flex-wrap mb-16 max-tablet-lg:mb-10 max-md:hidden '>
+                                                        <Filter customStyles='mr-auto'>Бестселлеры</Filter>
+                                                        <Filter sorting>цена</Filter>
+                                                        <Filter customStyles='ml-10 mr-16 max-lg:mx-8'>Производитель a-z</Filter>
+                                                        <Filter sorting customStyles='after:-right-2'>винтаж</Filter>
+                                                        <div className='relative flex gap-x-5 before:block before:absolute before:w-1 before:h-1 before:bg-white before:rounded-full before:left-[40%] before:top-1/2 before:-translate-y-1/2 tablet-lg:ml-16'>
                                                                 <a className='capitalize opacity-50 activeChoice'>Новинки</a>
                                                                 <a className='capitalize opacity-50'>популярные</a>
                                                         </div>

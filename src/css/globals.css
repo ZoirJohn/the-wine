@@ -19,6 +19,12 @@
         .clickButton {
                 @apply inline-block bg-maroon;
         }
+        .arrow {
+                @apply pr-2 after:block after:absolute after:border-t-[5px] after:border-r-[5px] after:border-r-transparent after:border-l-[5px] after:border-l-transparent after:-right-4 after:top-1/2 after:-translate-1/2 after:transition-transform;
+        }
+        .sort {
+                /* @apply */
+        }
 }
 @theme inline {
         --font-serif: var(--inter);
