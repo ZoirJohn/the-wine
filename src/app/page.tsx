@@ -25,24 +25,26 @@ const HomePage = () => {
                                 </div>
                         </section>
                         <section className=''>
-                                <div className='_container bg-brownie pt-18 flex justify-between'>
-                                        <aside className='min-w-[230px] h-20'>
+                                <div className='_container bg-brownie pt-18 flex justify-between gap-x-2 max-lg:gap-x-4'>
+                                        <aside className='max-md:hidden max-w-[230px] lg:w-full'>
                                                 <div>
-                                                        <Dropdown open={true}/>
+                                                        <Dropdown open={true} filterArray={['Белое', 'Красное', 'Розовое', 'Прочее']} name='Цвет' />
+                                                        <Dropdown open={true} filterArray={['Брют', 'Десертное', 'Крепленное', 'Нон-Дозаж', 'полусладкое', 'полусухое', 'сухое']} name='Сладость' />
+                                                        <Dropdown open={true} filterArray={'input'} name='Цена' />
                                                 </div>
                                         </aside>
                                         <div className='flex flex-col basis-[877px]'>
-                                                <div className='flex max-md:hidden col-span-3 mb-16'>
+                                                <div className='flex col-span-3 mb-16 max-tablet-lg:mb-10 max-md:hidden '>
                                                         <a className='capitalize mr-auto'>Бестселлеры</a>
                                                         <a className='capitalize'>цена</a>
-                                                        <a className='capitalize mx-10'>Производитель a-z</a>
+                                                        <a className='capitalize mx-10 max-tablet-lg:mx-5'>Производитель a-z</a>
                                                         <a className='capitalize'>винтаж</a>
-                                                        <div className='relative flex gap-x-5 before:block before:absolute before:w-1 before:h-1 before:bg-white before:rounded-full before:left-[40%] before:top-1/2 before:-translate-y-1/2 ml-16'>
+                                                        <div className='relative flex gap-x-5 before:block before:absolute before:w-1 before:h-1 before:bg-white before:rounded-full before:left-[40%] before:top-1/2 before:-translate-y-1/2 ml-16 max-tablet-lg:ml-8'>
                                                                 <a className='capitalize opacity-50 activeChoice'>Новинки</a>
                                                                 <a className='capitalize opacity-50'>популярные</a>
                                                         </div>
                                                 </div>
-                                                <div className='grid grid-cols-[repeat(3,240px)] justify-between gap-y-25'>
+                                                <div className='grid grid-cols-[repeat(3,240px)] justify-between gap-y-25 max-lg:grid-cols-[repeat(3,190px)] max-tablet-lg:grid-cols-[repeat(2,240px)] max-md:grid-cols-[repeat(auto-fit,220px)] max-sm:justify-around'>
                                                         <Card />
                                                         <Card />
                                                         <Card />

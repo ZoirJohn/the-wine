@@ -27,6 +27,7 @@
         --color-dark: var(--black);
         --color-brownie: var(--brownie);
         --breakpoint-xs: 26.5rem;
+        --breakpoint-tablet-lg: 51.25rem;
         --breakpoint-cnt: 81.25rem;
 }
 body {
