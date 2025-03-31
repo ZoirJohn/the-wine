@@ -25,6 +25,8 @@ const Carousel: React.FC<PropType> = (props) => {
                                 <div className='embla__container'>
                                         <Banner />
                                         <Banner />
+                                        <Banner />
+                                        <Banner />
                                 </div>
                         </div>
 
