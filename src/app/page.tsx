@@ -27,7 +27,7 @@ const HomePage = () => {
                                 </div>
                         </section>
                         <section>
-                                <div className='_container bg-brownie pt-18 flex justify-between gap-x-2 max-lg:gap-x-4 max-md:flex-col max-md:items-center'>
+                                <div className='_container bg-brownie pt-18 pb-31 flex justify-between gap-x-2 max-lg:gap-x-4 max-md:flex-col max-md:items-center'>
                                         <Sidebar />
                                         <div className='flex flex-col basis-[877px]'>
                                                 <div className='flex flex-wrap mb-16 max-tablet-lg:mb-10 max-md:hidden '>
@@ -54,6 +54,36 @@ const HomePage = () => {
                                                         <Card />
                                                         <Link href='/' className='link'>
                                                                 СМОТРЕТЬ ВСЕ
+                                                        </Link>
+                                                </div>
+                                        </div>
+                                </div>
+                        </section>
+                        <section>
+                                <div className='_container p-0 min-h-[285px] flex relative overflow-hidden'>
+                                        <div className='min-w-[612px] bg-[url(/taster.png)] bg-no-repeat bg-cover relative max-lg:min-w-[300px] max-lg:bg-center max-md:absolute max-md:after:hidden max-md:h-full max-md:w-full max-md:opacity-50'></div>
+                                        <div className='absolute top-75 left-133 w-20 h-[285px] bg-gradient-to-br from-[#331111] to-[#541C1C] -skew-y-60 scale-y-[2.1]'></div>
+                                        <div className='grow-1 bg-gradient-to-br from-[#331111] to-[#541C1C] flex justify-center'>
+                                                <div className='flex flex-col basis-[500px] justify-center items-center z-10'>
+                                                        <h1 className='font-sans font-regular'>Sommelier Choice</h1>
+                                                        <h2 className='uppercase text-center uppercase'>НЕ УВЕРЕНЫ В ВЫБОРЕ? МЫ ГОТОВЫ ПОМОЧЬ!</h2>
+                                                        <Link href='/' className='mt-8 max-xs:mt-4 uppercase'>
+                                                                ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
+                                                        </Link>
+                                                </div>
+                                        </div>
+                                </div>
+                        </section>
+                        <section>
+                                <div className='_container p-0 min-h-[285px] flex relative overflow-hidden'>
+                                        <div className='min-w-[612px] bg-[url(/taster.png)] bg-no-repeat bg-cover relative max-lg:min-w-[300px] max-lg:bg-center max-md:absolute max-md:after:hidden max-md:h-full max-md:w-full max-md:opacity-50'></div>
+                                        <div className='absolute top-75 left-133 w-20 h-[285px] bg-gradient-to-br from-[#331111] to-[#541C1C] -skew-y-60 scale-y-[2.1]'></div>
+                                        <div className='grow-1 bg-gradient-to-br from-[#331111] to-[#541C1C] flex justify-center'>
+                                                <div className='flex flex-col basis-[500px] justify-center items-center z-10'>
+                                                        <h1 className='font-sans font-regular'>Sommelier Choice</h1>
+                                                        <h2 className='uppercase text-center uppercase'>НЕ УВЕРЕНЫ В ВЫБОРЕ? МЫ ГОТОВЫ ПОМОЧЬ!</h2>
+                                                        <Link href='/' className='mt-8 max-xs:mt-4 uppercase'>
+                                                                ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
                                                         </Link>
                                                 </div>
                                         </div>
