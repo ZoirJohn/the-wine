@@ -22,8 +22,8 @@
         .arrow {
                 @apply pr-2 after:block after:absolute after:border-t-[5px] after:border-r-[5px] after:border-r-transparent after:border-l-[5px] after:border-l-transparent after:-right-4 after:top-1/2 after:-translate-1/2 after:transition-transform;
         }
-        .sort {
-                /* @apply */
+        .link {
+                @apply relative font-extrabold tracking-[5.5px] uppercase before:absolute before:w-11 before:h-[1px] before:bg-white before:right-0 before:top-1/2 before:-translate-y-1/2
         }
 }
 @theme inline {

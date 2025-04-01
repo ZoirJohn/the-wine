@@ -2,6 +2,7 @@ import Card from '@/components/Card'
 import Carousel from '@/components/Carousel'
 import Sidebar from '@/components/Sidebar'
 import Filter from '@/components/ui/Filter'
+import Link from 'next/link'
 
 const HomePage = () => {
         return (
@@ -46,6 +47,14 @@ const HomePage = () => {
                                                         <Card />
                                                         <Card />
                                                         <Card />
+                                                        <Card />
+                                                        <Card />
+                                                        <Card />
+                                                        <Card />
+                                                        <Card />
+                                                        <Link href='/' className='link'>
+                                                                СМОТРЕТЬ ВСЕ
+                                                        </Link>
                                                 </div>
                                         </div>
                                 </div>

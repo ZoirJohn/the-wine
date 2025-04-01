@@ -8,7 +8,7 @@ const Sidebar = () => {
         useScrollLock(isOpenFilter)
         return (
                 <>
-                        <aside className='relative max-w-[230px] lg:w-full max-md:w-full max-md:'>
+                        <aside className='relative max-w-[230px] lg:w-full max-md:w-full max-md:self-start'>
                                 <button className='clickButton py-2 px-3 mb-10 flex gap-x-2 items-center md:hidden' onClick={() => setIsOpenFilter(!isOpenFilter)}>
                                         Сортировать
                                         <svg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 -960 960 960' width='24px' fill='#e3e3e3'>
@@ -17,7 +17,7 @@ const Sidebar = () => {
                                 </button>
                                 <div
                                         className={`${
-                                                isOpenFilter ? 'block' : 'hidden'
+                                                isOpenFilter ? 'block' : 'max-md:hidden'
                                         } bg-brownie z-10 w-full overflow-auto max-md:h-screen max-md:fixed max-md:top-0 max-md:left-1/2 max-md:-translate-x-1/2 max-md:p-4 max-md:pt-8`}
                                 >
                                         <span
