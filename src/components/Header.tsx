@@ -13,7 +13,7 @@ const Header = () => {
                                 </Link>
                         </div>
                         <div className='_container flex sm:justify-between items-center md:py-[15px] py-2 bg-dark relative'>
-                                <Link href='profile' className='flex items-center gap-x-[10px]'>
+                                <Link href='/' className='flex items-center gap-x-[10px]'>
                                         <Image src='/icon.png' alt='logo' width={24} height={24} className='block' />
                                         <Image src='/word.png' alt='logo' width={183} height={28} className='max-lg:w-40 max-md:hidden block' />
                                 </Link>

@@ -1,18 +1,14 @@
 'use client'
-import React from 'react'
-import { EmblaOptionsType } from 'embla-carousel'
+import React, { FC, ReactNode } from 'react'
 import { DotButton, useDotButton } from './CarouselDots'
 import { PrevButton, NextButton, usePrevNextButtons } from './CarouselArrows'
 import useEmblaCarousel from 'embla-carousel-react'
 import '@/css/carousel.css'
 import Banner from './Banner'
 import Autoplay from 'embla-carousel-autoplay'
+import { EmblaOptionsType } from 'embla-carousel'
 
-type PropType = {
-        options?: EmblaOptionsType
-}
-
-const Carousel: React.FC<PropType> = (props) => {
+const Carousel: FC<{ children: ReactNode; options: EmblaOptionsType }> = ({ children, options }) => {
         const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000, stopOnMouseEnter: true, stopOnInteraction: false })])
 
         const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi)
@@ -22,12 +18,7 @@ const Carousel: React.FC<PropType> = (props) => {
         return (
                 <div className='embla'>
                         <div className='embla__viewport' ref={emblaRef}>
-                                <div className='embla__container'>
-                                        <Banner />
-                                        <Banner />
-                                        <Banner />
-                                        <Banner />
-                                </div>
+                                <div className='embla__container'>{children}</div>
                         </div>
 
                         <div className='embla__controls'>
