@@ -14,7 +14,7 @@ const HeaderNav = () => {
                                 </svg>
                         </div>
                         <nav
-                                className={`_container flex bg-brownie max-sm:absolute max-sm:w-full -z-10 max-sm:pt-19 max-sm:items-center max-sm:justify-center max-sm:min-h-screen top-0 overflow-auto transition-all ${
+                                className={`_container flex max-sm:absolute max-sm:w-full -z-10 max-sm:pt-19 max-sm:items-center max-sm:justify-center max-sm:min-h-screen top-0 overflow-auto transition-all ${
                                         isOpen ? 'max-sm:-translate-y-0' : 'max-sm:-translate-y-full'
                                 }`}
                         >

@@ -18,7 +18,7 @@ const Sidebar = () => {
                                 <div
                                         className={`${
                                                 isOpenFilter ? 'block' : 'max-md:hidden'
-                                        } bg-brownie z-10 w-full overflow-auto max-md:h-screen max-md:fixed max-md:top-0 max-md:left-1/2 max-md:-translate-x-1/2 max-md:p-4 max-md:pt-8`}
+                                        } z-10 w-full overflow-auto max-md:h-screen max-md:fixed max-md:top-0 max-md:left-1/2 max-md:-translate-x-1/2 max-md:p-4 max-md:pt-8`}
                                 >
                                         <span
                                                 onClick={() => setIsOpenFilter(false)}

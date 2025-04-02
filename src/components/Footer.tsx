@@ -1,7 +1,7 @@
 const Footer = () => {
         return (
                 <footer>
-                        <div className='_container flex flex-wrap justify-between leading-relaxed bg-brownie pt-17 pb-14 gap-15 max-md:flex-col max-sm:pt-10 max-sm:pb-8 max-sm:text-base'>
+                        <div className='_container flex flex-wrap justify-between leading-relaxed pt-17 pb-14 gap-15 max-md:flex-col max-sm:pt-10 max-sm:pb-8 max-sm:text-base'>
                                 <ul>
                                         <h3 className='font-bold mb-3'>О нас</h3>
                                         <li>История</li>
