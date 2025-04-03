@@ -54,9 +54,9 @@ const Wine = () => {
                         <section>
                                 <div className='_container relative overflow-hidden'>
                                         <div className='absolute top-75 left-133 w-20 h-[285px] bg-gradient-to-br from-[#8D082B] to-[#570707] -skew-y-60 scale-y-[2.1] max-md:hidden z-10'></div>
-                                        <div className='min-h-[285px] flex relative' key={1}>
+                                        <div className='min-h-[285px] flex relative'>
                                                 <div className='basis-[600px] bg-[url(/special.png)]'></div>
-                                                <div className='basis-[685px] bg-gradient-to-br from-[#8D082B] to-[#570707] flex flex-col items-center justify-center '>
+                                                <div className='basis-[685px] bg-gradient-to-br from-[#8D082B] to-[#570707] flex flex-col items-center justify-center'>
                                                         <h1 className='font-sans font-regular capitalize opacity-75'>Sommelier Choice</h1>
                                                         <h2 className='uppercase text-center'>СПЕЦИАЛЬНЫЕ ЦЕНЫ ДЛЯ КОРПОРАТИВНЫХ КЛИЕНТОВ</h2>
                                                         <Link href='/' className='mt-8 max-xs:mt-4 uppercase'>
