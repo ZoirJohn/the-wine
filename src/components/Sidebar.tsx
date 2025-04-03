@@ -1,9 +1,9 @@
 'use client'
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import Dropdown from './ui/Dropdown'
 import { useScrollLock } from '@/hooks/useScrollLock'
 
-const Sidebar = () => {
+const Sidebar = ({ children }: { children?: ReactNode }) => {
         const [isOpenFilter, setIsOpenFilter] = useState(false)
         useScrollLock(isOpenFilter)
         return (
@@ -15,6 +15,7 @@ const Sidebar = () => {
                                                 <path d='M400-240v-80h160v80H400ZM240-440v-80h480v80H240ZM120-640v-80h720v80H120Z' />
                                         </svg>
                                 </button>
+                                {children}
                                 <div
                                         className={`${
                                                 isOpenFilter ? 'block' : 'max-md:hidden'
