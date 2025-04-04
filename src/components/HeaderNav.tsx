@@ -23,52 +23,52 @@ const HeaderNav = () => {
                                         onClick={() => setIsOpen(false)}
                                 >
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='wine'>
+                                                <Link className='max-sm:py-2 block' href='/wine'>
                                                         Вино
                                                 </Link>
                                         </li>
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='sparkling'>
+                                                <Link className='max-sm:py-2 block' href='/sparkling'>
                                                         Игристое
                                                 </Link>
                                         </li>
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='whiskey'>
+                                                <Link className='max-sm:py-2 block' href='/whiskey'>
                                                         Виски
                                                 </Link>
                                         </li>
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='cognac'>
+                                                <Link className='max-sm:py-2 block' href='/cognac'>
                                                         Коньяк
                                                 </Link>
                                         </li>
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='armagnac'>
+                                                <Link className='max-sm:py-2 block' href='/armagnac'>
                                                         Арманьяк
                                                 </Link>
                                         </li>
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='rum'>
+                                                <Link className='max-sm:py-2 block' href='/rum'>
                                                         Ром
                                                 </Link>
                                         </li>
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='vodka'>
+                                                <Link className='max-sm:py-2 block' href='/vodka'>
                                                         Водка
                                                 </Link>
                                         </li>
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='liquor'>
+                                                <Link className='max-sm:py-2 block' href='/liquor'>
                                                         Ликер
                                                 </Link>
                                         </li>
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='coctails'>
+                                                <Link className='max-sm:py-2 block' href='/coctails'>
                                                         Коктейли
                                                 </Link>
                                         </li>
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='delicacies'>
+                                                <Link className='max-sm:py-2 block' href='/delicacies'>
                                                         Деликатесы
                                                 </Link>
                                         </li>

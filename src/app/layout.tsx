@@ -24,7 +24,7 @@ export default function RootLayout({
         children: React.ReactNode
 }>) {
         return (
-                <html lang='en'>
+                <html lang='en' >
                         <body className={`antialiased text-xs font-medium ${inter.variable} ${alexBrush.variable} font-serif h-screen`}>
                                 <div className='wrapper flex flex-col h-full'>
                                         <Header />

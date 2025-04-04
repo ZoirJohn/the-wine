@@ -1,10 +1,10 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { ReactNode } from 'react'
 
 const Card = ({ children }: { children?: ReactNode }) => {
-        // children is for image of the card
         return (
-                <div className='flex flex-col gap-y-5 w-full'>
+                <Link href='/product' className='flex flex-col gap-y-5 w-full'>
                         <div className=' flex pt-13'>
                                 <div className='bg-black relative w-full h-75 before:absolute before:h-10 before:w-1 before:bg-maroon before:right-0'>
                                         {children || <Image src='/wine.png' alt='wine' width={99} height={349} loading='lazy' className='block left-1/2 -translate-x-1/2 absolute bottom-0' />}
@@ -23,7 +23,7 @@ const Card = ({ children }: { children?: ReactNode }) => {
                                         </button>
                                 </div>
                         </div>
-                </div>
+                </Link>
         )
 }
 
