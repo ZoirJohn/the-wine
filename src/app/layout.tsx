@@ -50,7 +50,7 @@ export default function RootLayout({
                                                                 <form className='min-h-[285px] basis-[500px] bg-black relative pt-8 pl-11 pr-16 max-xs:px-8 max-xs:p-0 rightTriangle after:border-r-[133px] flex flex-col items-start max-xs:justify-center gap-y-6 opacity-100'>
                                                                         <p className='uppercase font-bold tracking-[3px] text-center'>ПОДПИСАТЬСЯ НА EMAIL РАССЫЛКУ</p>
                                                                         <label className='flex flex-col gap-y-4 w-full'>
-                                                                                <span className='text-[9px] opacity-50'>EMAIL</span>
+                                                                                <span className='text-mini opacity-50'>EMAIL</span>
                                                                                 <input type='text' name='' id='' className='bg-white py-[10px]' />
                                                                         </label>
                                                                         <button className='uppercase bg-[#9D0000] py-[10px] px-[50px]'>ОТПРАВИТЬ</button>
