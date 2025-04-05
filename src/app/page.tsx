@@ -1,8 +1,10 @@
+import { wineImages } from '@/api/global'
 import Banner from '@/components/Banner'
 import Card from '@/components/Card'
 import Carousel from '@/components/Carousel'
 import Sidebar from '@/components/Sidebar'
 import Filter from '@/components/ui/Filter'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const HomePage = () => {
@@ -50,16 +52,21 @@ const HomePage = () => {
                                                         </div>
                                                 </div>
                                                 <div className='grid grid-cols-[repeat(3,240px)] justify-between gap-y-25 gap-x-1 max-lg:grid-cols-[repeat(3,190px)] max-tablet-lg:grid-cols-[repeat(2,240px)] max-md:grid-cols-[repeat(auto-fit,220px)] max-sm:justify-around'>
-                                                        <Card />
-                                                        <Card />
-                                                        <Card />
-                                                        <Card />
-                                                        <Card />
-                                                        <Card />
-                                                        <Card />
-                                                        <Card />
-                                                        <Card />
-                                                        <Link href='/' className='link'>
+                                                        {wineImages.map((img, id) => {
+                                                                return (
+                                                                        <Card key={id} id={id}>
+                                                                                <Image
+                                                                                        src={img}
+                                                                                        alt='wine-type'
+                                                                                        width={99}
+                                                                                        height={349}
+                                                                                        className='block left-1/2 -translate-x-1/2 absolute bottom-0'
+                                                                                />
+                                                                        </Card>
+                                                                )
+                                                        })}
+
+                                                        <Link href='/' className='link col-start-1 col-end-2'>
                                                                 СМОТРЕТЬ ВСЕ
                                                         </Link>
                                                 </div>

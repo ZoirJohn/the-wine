@@ -1,3 +1,4 @@
+import { whiskeyImages } from '@/api/global'
 import Card from '@/components/Card'
 import Carousel from '@/components/Carousel'
 import Poster from '@/components/Poster'
@@ -36,115 +37,21 @@ const Whiskey = () => {
                                                         </div>
                                                 </div>
                                                 <div className='grid grid-cols-[repeat(3,240px)] justify-between gap-y-25 gap-x-1 max-lg:grid-cols-[repeat(3,190px)] max-tablet-lg:grid-cols-[repeat(2,240px)] max-md:grid-cols-[repeat(auto-fit,220px)] max-sm:justify-around'>
-                                                        <Card
-                                                                children={
-                                                                        <Image
-                                                                                src='/bluewine.png'
-                                                                                alt='wine'
-                                                                                width={133}
-                                                                                height={320}
-                                                                                loading='lazy'
-                                                                                className='block left-1/2 -translate-x-1/2 absolute bottom-7'
-                                                                        />
-                                                                }
-                                                        />
-                                                        <Card
-                                                                children={
-                                                                        <Image
-                                                                                src='/yellowwine.png'
-                                                                                alt='wine'
-                                                                                width={133}
-                                                                                height={320}
-                                                                                loading='lazy'
-                                                                                className='block left-1/2 -translate-x-1/2 absolute bottom-7'
-                                                                        />
-                                                                }
-                                                        />
-                                                        <Card
-                                                                children={
-                                                                        <Image
-                                                                                src='/yelwine.png'
-                                                                                alt='wine'
-                                                                                width={133}
-                                                                                height={320}
-                                                                                loading='lazy'
-                                                                                className='block left-1/2 -translate-x-1/2 absolute bottom-7'
-                                                                        />
-                                                                }
-                                                        />
-                                                        <Card
-                                                                children={
-                                                                        <Image
-                                                                                src='/yelwine.png'
-                                                                                alt='wine'
-                                                                                width={133}
-                                                                                height={320}
-                                                                                loading='lazy'
-                                                                                className='block left-1/2 -translate-x-1/2 absolute bottom-7'
-                                                                        />
-                                                                }
-                                                        />
-                                                        <Card
-                                                                children={
-                                                                        <Image
-                                                                                src='/yellowwine.png'
-                                                                                alt='wine'
-                                                                                width={133}
-                                                                                height={320}
-                                                                                loading='lazy'
-                                                                                className='block left-1/2 -translate-x-1/2 absolute bottom-7'
-                                                                        />
-                                                                }
-                                                        />
-                                                        <Card
-                                                                children={
-                                                                        <Image
-                                                                                src='/yelwine.png'
-                                                                                alt='wine'
-                                                                                width={133}
-                                                                                height={320}
-                                                                                loading='lazy'
-                                                                                className='block left-1/2 -translate-x-1/2 absolute bottom-7'
-                                                                        />
-                                                                }
-                                                        />
-                                                        <Card
-                                                                children={
-                                                                        <Image
-                                                                                src='/blackjack.png'
-                                                                                alt='wine'
-                                                                                width={133}
-                                                                                height={320}
-                                                                                loading='lazy'
-                                                                                className='block left-1/2 -translate-x-1/2 absolute bottom-7'
-                                                                        />
-                                                                }
-                                                        />
-                                                        <Card
-                                                                children={
-                                                                        <Image
-                                                                                src='/blackjack.png'
-                                                                                alt='wine'
-                                                                                width={133}
-                                                                                height={320}
-                                                                                loading='lazy'
-                                                                                className='block left-1/2 -translate-x-1/2 absolute bottom-7'
-                                                                        />
-                                                                }
-                                                        />
-                                                        <Card
-                                                                children={
-                                                                        <Image
-                                                                                src='/whiskey.png'
-                                                                                alt='wine'
-                                                                                width={133}
-                                                                                height={320}
-                                                                                loading='lazy'
-                                                                                className='block left-1/2 -translate-x-1/2 absolute bottom-7'
-                                                                        />
-                                                                }
-                                                        />
-                                                        <Link href='/' className='link'>
+                                                        {whiskeyImages.map((img, id) => {
+                                                                return (
+                                                                        <Card key={id}>
+                                                                                <Image
+                                                                                        src={img}
+                                                                                        alt='wine'
+                                                                                        width={133}
+                                                                                        height={320}
+                                                                                        loading='lazy'
+                                                                                        className='block left-1/2 -translate-x-1/2 absolute bottom-7'
+                                                                                />
+                                                                        </Card>
+                                                                )
+                                                        })}
+                                                        <Link href='/' className='link col-start-1 col-end-2'>
                                                                 СМОТРЕТЬ ВСЕ
                                                         </Link>
                                                 </div>
