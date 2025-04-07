@@ -28,33 +28,8 @@ const HeaderNav = () => {
                                                 </Link>
                                         </li>
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='/sparkling'>
-                                                        Игристое
-                                                </Link>
-                                        </li>
-                                        <li>
                                                 <Link className='max-sm:py-2 block' href='/whiskey'>
                                                         Виски
-                                                </Link>
-                                        </li>
-                                        <li>
-                                                <Link className='max-sm:py-2 block' href='/cognac'>
-                                                        Коньяк
-                                                </Link>
-                                        </li>
-                                        <li>
-                                                <Link className='max-sm:py-2 block' href='/armagnac'>
-                                                        Арманьяк
-                                                </Link>
-                                        </li>
-                                        <li>
-                                                <Link className='max-sm:py-2 block' href='/rum'>
-                                                        Ром
-                                                </Link>
-                                        </li>
-                                        <li>
-                                                <Link className='max-sm:py-2 block' href='/vodka'>
-                                                        Водка
                                                 </Link>
                                         </li>
                                         <li>
@@ -63,7 +38,7 @@ const HeaderNav = () => {
                                                 </Link>
                                         </li>
                                         <li>
-                                                <Link className='max-sm:py-2 block' href='/coctails'>
+                                                <Link className='max-sm:py-2 block' href='/cocktails'>
                                                         Коктейли
                                                 </Link>
                                         </li>
