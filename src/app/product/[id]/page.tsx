@@ -114,11 +114,43 @@ const Product = async ({ params }: { params: Promise<{ id: number }> }) => {
                                         </div>
                                 </div>
                         </section>
-                        <CardCarousel>
-                                <Card id={1} />
-                                <Card id={1} />
-                                <Card id={1} />
-                        </CardCarousel>
+                        <section>
+                                <div className='_container pb-31'>
+                                        <CardCarousel>
+                                                <Card id={1} width={true}>
+                                                        <Image src='/wine.png' alt='wine-type' width={99} height={349} className='block left-1/2 -translate-x-1/2 absolute bottom-0' />
+                                                </Card>
+                                                <Card id={2} width={true}>
+                                                        <Image src='/wine.png' alt='wine-type' width={99} height={349} className='block left-1/2 -translate-x-1/2 absolute bottom-0' />
+                                                </Card>
+                                                <Card id={3} width={true}>
+                                                        <Image src='/wine.png' alt='wine-type' width={99} height={349} className='block left-1/2 -translate-x-1/2 absolute bottom-0' />
+                                                </Card>
+                                                <Card id={3} width={true}>
+                                                        <Image src='/wine.png' alt='wine-type' width={99} height={349} className='block left-1/2 -translate-x-1/2 absolute bottom-0' />
+                                                </Card>
+                                                <Card id={3} width={true}>
+                                                        <Image src='/wine.png' alt='wine-type' width={99} height={349} className='block left-1/2 -translate-x-1/2 absolute bottom-0' />
+                                                </Card>
+                                                <Card id={1} width={true}>
+                                                        <Image src='/wine.png' alt='wine-type' width={99} height={349} className='block left-1/2 -translate-x-1/2 absolute bottom-0' />
+                                                </Card>
+                                                <Card id={2} width={true}>
+                                                        <Image src='/wine.png' alt='wine-type' width={99} height={349} className='block left-1/2 -translate-x-1/2 absolute bottom-0' />
+                                                </Card>
+                                                <Card id={3} width={true}>
+                                                        <Image src='/wine.png' alt='wine-type' width={99} height={349} className='block left-1/2 -translate-x-1/2 absolute bottom-0' />
+                                                </Card>
+                                                <Card id={3} width={true}>
+                                                        <Image src='/wine.png' alt='wine-type' width={99} height={349} className='block left-1/2 -translate-x-1/2 absolute bottom-0' />
+                                                </Card>
+                                                <Card id={3} width={true}>
+                                                        <Image src='/wine.png' alt='wine-type' width={99} height={349} className='block left-1/2 -translate-x-1/2 absolute bottom-0' />
+                                                </Card>
+                                        </CardCarousel>
+                                </div>
+                        </section>
+
                         <Special />
                 </>
         )

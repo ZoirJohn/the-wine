@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import { ReactNode } from 'react'
 
-const Card = ({ children, id }: { children?: ReactNode; id: any }) => {
+const Card = ({ children, id, width }: { children?: ReactNode; id: any; width?: boolean }) => {
         return (
-                <Link href={`/product/${id}`} className='flex flex-col gap-y-5 w-full'>
-                        <div className=' flex pt-13'>
+                <Link href={`/product/${id}`} className={`flex flex-col gap-y-5 ${width ? 'basis-60 shrink-0 grow-0 max-xs:basis-[90%]' : 'w-full'}`}>
+                        <div className='flex pt-13'>
                                 <div className='bg-black relative w-full h-75 before:absolute before:h-10 before:w-1 before:bg-maroon before:right-0'>{children}</div>
                         </div>
                         <div className='leading-[14px] tracking-widest'>

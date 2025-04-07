@@ -1,36 +1,23 @@
 'use client'
 import React, { useCallback, useEffect, useState } from 'react'
-import { EmblaOptionsType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import { EmblaCarouselType } from 'embla-carousel'
 
-type PropType = {
-        slides: number[]
-        options?: EmblaOptionsType
-}
-
-const CardCarousel: React.FC<PropType> = (props) => {
-        const { slides, options } = props
-        const [emblaRef, emblaApi] = useEmblaCarousel(options)
+const CardCarousel: React.FC<any> = (props) => {
+        const [emblaRef, emblaApi] = useEmblaCarousel({})
 
         const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } = usePrevNextButtons(emblaApi)
 
         return (
                 <section className='embla'>
-                        <div className='embla__viewport' ref={emblaRef}>
-                                <div className='embla__container'>
-                                        {slides.map((index) => (
-                                                <div className='embla__slide' key={index}>
-                                                        <div className='embla__slide__number'>{index + 1}</div>
-                                                </div>
-                                        ))}
-                                </div>
+                        <div className='embla__viewport overflow-hidden max-w-[880px] mx-auto' ref={emblaRef}>
+                                <div className='embla__container flex gap-20 max-md:gap-10'>{props.children}</div>
+                                <button className='link mt-19'>СМОТРЕТЬ ВСЕ</button>
                         </div>
-
                         <div className='embla__controls'>
-                                <div className='embla__buttons'>
-                                        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-                                        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+                                <div className='embla__buttons relative'>
+                                        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled}></PrevButton>
+                                        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled}></NextButton>
                                 </div>
                         </div>
                 </section>
@@ -72,33 +59,29 @@ const usePrevNextButtons = (emblaApi: EmblaCarouselType | undefined) => {
 }
 
 const PrevButton = (props: any) => {
-        const { children, ...restProps } = props
-
         return (
-                <button className='embla__button embla__button--prev' type='button' {...restProps}>
-                        <svg className='embla__button__svg' viewBox='0 0 532 532'>
+                <button className='embla__button embla__button--prev absolute bottom-90 left-0' type='button' {...props}>
+                        <svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                <circle cx='17' cy='17' r='17' fill='white' fillOpacity='0.35' />
                                 <path
-                                        fill='currentColor'
-                                        d='M355.66 11.354c13.793-13.805 36.208-13.805 50.001 0 13.785 13.804 13.785 36.238 0 50.034L201.22 266l204.442 204.61c13.785 13.805 13.785 36.239 0 50.044-13.793 13.796-36.208 13.796-50.002 0a5994246.277 5994246.277 0 0 0-229.332-229.454 35.065 35.065 0 0 1-10.326-25.126c0-9.2 3.393-18.26 10.326-25.2C172.192 194.973 332.731 34.31 355.66 11.354Z'
+                                        d='M11.6464 16.6464C11.4512 16.8417 11.4512 17.1583 11.6464 17.3536L14.8284 20.5355C15.0237 20.7308 15.3403 20.7308 15.5355 20.5355C15.7308 20.3403 15.7308 20.0237 15.5355 19.8284L12.7071 17L15.5355 14.1716C15.7308 13.9763 15.7308 13.6597 15.5355 13.4645C15.3403 13.2692 15.0237 13.2692 14.8284 13.4645L11.6464 16.6464ZM24 16.5H12V17.5H24V16.5Z'
+                                        fill='#0E0E0E'
                                 />
                         </svg>
-                        {children}
                 </button>
         )
 }
 
 const NextButton = (props: any) => {
-        const { children, ...restProps } = props
-
         return (
-                <button className='embla__button embla__button--next' type='button' {...restProps}>
-                        <svg className='embla__button__svg' viewBox='0 0 532 532'>
+                <button className='embla__button embla__button--next absolute bottom-90 right-0' type='button' {...props}>
+                        <svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                <circle cx='17' cy='17' r='17' transform='rotate(180 17 17)' fill='white' fillOpacity='0.35' />
                                 <path
-                                        fill='currentColor'
-                                        d='M176.34 520.646c-13.793 13.805-36.208 13.805-50.001 0-13.785-13.804-13.785-36.238 0-50.034L330.78 266 126.34 61.391c-13.785-13.805-13.785-36.239 0-50.044 13.793-13.796 36.208-13.796 50.002 0 22.928 22.947 206.395 206.507 229.332 229.454a35.065 35.065 0 0 1 10.326 25.126c0 9.2-3.393 18.26-10.326 25.2-45.865 45.901-206.404 206.564-229.332 229.52Z'
+                                        d='M22.3536 17.3536C22.5488 17.1583 22.5488 16.8417 22.3536 16.6464L19.1716 13.4645C18.9763 13.2692 18.6597 13.2692 18.4645 13.4645C18.2692 13.6597 18.2692 13.9763 18.4645 14.1716L21.2929 17L18.4645 19.8284C18.2692 20.0237 18.2692 20.3403 18.4645 20.5355C18.6597 20.7308 18.9763 20.7308 19.1716 20.5355L22.3536 17.3536ZM10 17.5L22 17.5L22 16.5L10 16.5L10 17.5Z'
+                                        fill='#0E0E0E'
                                 />
                         </svg>
-                        {children}
                 </button>
         )
 }
