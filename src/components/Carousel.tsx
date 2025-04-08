@@ -5,9 +5,8 @@ import { PrevButton, NextButton, usePrevNextButtons } from './CarouselArrows'
 import useEmblaCarousel from 'embla-carousel-react'
 import '@/css/carousel.css'
 import Autoplay from 'embla-carousel-autoplay'
-import { EmblaOptionsType } from 'embla-carousel'
 
-const Carousel: FC<{ children: ReactNode; options?: EmblaOptionsType }> = ({ children, options }) => {
+const Carousel: FC<{ children: ReactNode }> = ({ children }) => {
         const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000, stopOnMouseEnter: true, stopOnInteraction: false })])
 
         const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi)

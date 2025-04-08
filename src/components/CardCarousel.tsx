@@ -1,9 +1,9 @@
 'use client'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { ReactNode, useCallback, useEffect, useState } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { EmblaCarouselType } from 'embla-carousel'
 
-const CardCarousel: React.FC<any> = (props) => {
+const CardCarousel: React.FC<{ children: ReactNode }> = (props) => {
         const [emblaRef, emblaApi] = useEmblaCarousel({})
 
         const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } = usePrevNextButtons(emblaApi)
@@ -58,7 +58,7 @@ const usePrevNextButtons = (emblaApi: EmblaCarouselType | undefined) => {
         }
 }
 
-const PrevButton = (props: any) => {
+const PrevButton = (props: { onClick: () => void; disabled: boolean }) => {
         return (
                 <button className='embla__button embla__button--prev absolute bottom-90 left-0' type='button' {...props}>
                         <svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -72,7 +72,7 @@ const PrevButton = (props: any) => {
         )
 }
 
-const NextButton = (props: any) => {
+const NextButton = (props: { onClick: () => void; disabled: boolean }) => {
         return (
                 <button className='embla__button embla__button--next absolute bottom-90 right-0' type='button' {...props}>
                         <svg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'>

@@ -39,7 +39,7 @@ const Whiskey = () => {
                                                 <div className='grid grid-cols-[repeat(3,240px)] justify-between gap-y-25 gap-x-1 max-lg:grid-cols-[repeat(3,190px)] max-tablet-lg:grid-cols-[repeat(2,240px)] max-md:grid-cols-[repeat(auto-fit,220px)] max-sm:justify-around'>
                                                         {whiskeyImages.map((img, id) => {
                                                                 return (
-                                                                        <Card key={id}>
+                                                                        <Card key={id} id={id}>
                                                                                 <Image
                                                                                         src={img}
                                                                                         alt='wine'

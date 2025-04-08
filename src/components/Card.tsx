@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ReactNode } from 'react'
 
-const Card = ({ children, id, width }: { children?: ReactNode; id: any; width?: boolean }) => {
+const Card = ({ children, id, width }: { children?: ReactNode; id: number; width?: boolean }) => {
         return (
                 <Link href={`/product/${id}`} className={`flex flex-col gap-y-5 ${width ? 'basis-60 shrink-0 grow-0 max-xs:basis-[90%]' : 'w-full'}`}>
                         <div className='flex pt-13'>

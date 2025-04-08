@@ -3,7 +3,7 @@ import CardCarousel from '@/components/CardCarousel'
 import Special from '@/components/Special'
 import Image from 'next/image'
 
-const Product = async ({ params }: { params: Promise<{ id: number }> }) => {
+const Product =  () => {
         return (
                 <>
                         <section>
