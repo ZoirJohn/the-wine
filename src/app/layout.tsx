@@ -12,10 +12,12 @@ export const metadata: Metadata = {
 const inter = Inter({
         weight: ['400', '500', '600', '700'],
         variable: '--inter',
+        subsets: ['latin', 'cyrillic'],
 })
 const alexBrush = Alex_Brush({
         weight: ['400'],
         variable: '--alex',
+        subsets: ['latin'],
 })
 
 export default function RootLayout({
@@ -24,7 +26,7 @@ export default function RootLayout({
         children: React.ReactNode
 }>) {
         return (
-                <html lang='en' >
+                <html lang='en'>
                         <body className={`antialiased text-xs font-medium ${inter.variable} ${alexBrush.variable} font-serif h-screen`}>
                                 <div className='wrapper flex flex-col h-full'>
                                         <Header />
