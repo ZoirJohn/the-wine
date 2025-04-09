@@ -27,7 +27,7 @@
                 @apply relative font-extrabold tracking-[5.5px] uppercase before:absolute before:w-11 before:h-[1px] before:bg-white before:left-50 before:top-1/2 before:-translate-y-1/2;
         }
         .rightTriangle {
-                @apply after:block after:absolute after:border-t-[285px]  after:border-t-black after:border-r-transparent after:left-full max-lg:min-w-[300px] max-lg:bg-center max-md:absolute max-md:after:hidden max-md:h-full max-md:w-full max-md:opacity-50 after:top-0;
+                @apply after:block after:absolute after:border-t-[285px] after:border-t-black after:border-r-transparent after:left-full max-lg:min-w-[300px] max-lg:bg-center max-md:after:hidden max-md:h-full max-md:w-full max-md:opacity-50 after:top-0;
         }
 }
 @theme inline {
