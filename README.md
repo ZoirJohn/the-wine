@@ -1,52 +1,54 @@
-# 🛒 Product Slider with Filter — Next.js 15.5 + Embla Carousel
+# 🍷 Wine Store
+
+An elegant online wine store built with **Next.js 15.5** and **Embla Carousel**, offering a smooth browsing experience with API-based filtering and a sleek, responsive design.
 
 ## ✨ Features
 
-* 🔍 **Product Filtering** — Browse products easily with a dynamic API filter.
-* 🎠 **Embla Carousel Integration** — Smooth, mobile-friendly product slider.
-* ⚡ **Next.js 15.5** — Fast rendering and routing.
-* 🎯 **Responsive Design** — Works across devices.
-* 📦 **Reusable Components** — Modular and maintainable structure.
+* 🛒 **Product Browsing** – Seamlessly explore our curated wine collection.
+* 🔍 **Advanced Filtering** – Filter wines by type, region, price, and more via API.
+* 🎠 **Embla Carousel** – Smooth, responsive product slider for featured wines.
+* 📱 **Fully Responsive** – Optimized for mobile, tablet, and desktop devices.
+* ⚡ **Next.js 15.5** – Leveraging the latest app router and performance enhancements.
+* 🎨 **Modern UI** – Minimal yet visually appealing interface.
 
 ## 🛠 Technologies
 
-* **Next.js 15.5** — Latest version for optimal performance.
-* **TypeScript** — Strict typing for safety.
-* **Embla Carousel** — Lightweight slider library.
-* **API Fetching** — Dynamic product loading.
-* **CSS Modules/Tailwind CSS** — Flexible styling.
+* ⚛ **Next.js 15.5** – React framework for fast and scalable web apps.
+* 🎠 **Embla Carousel** – Lightweight, customizable slider for product displays.
+* 🎯 **TypeScript** – Strongly typed JavaScript for maintainability.
+* 🎨 **Tailwind CSS** – Utility-first CSS for rapid styling.
+* 🔌 **REST API** – Dynamic data fetching for products and filters.
 
-## 📋 Process
+## 🔍 How It Works
 
-1. Set up Next.js 15.5 project.
-2. Install and configure Embla Carousel.
-3. Create product API endpoint for fetching data.
-4. Implement filtering logic for products.
-5. Integrate carousel to display products.
-6. Add responsive styling.
+1. **Browse Products** – Navigate through categories or use filters to refine results.
+2. **Filter with API** – Filters send requests to the backend, returning relevant wines.
+3. **Embla Slider** – Highlights featured products with smooth transitions.
+4. **Responsive UI** – Layout adapts perfectly to any device.
 
-## ⚙️ How It Works
+## 🚀 Process
 
-* The **API** returns a filtered list of products based on the selected category.
-* **Embla Carousel** renders these products in a smooth, swipeable slider.
-* The **filter component** updates the carousel in real-time.
+* Designed the UI layout with mobile-first approach.
+* Integrated Embla Carousel for interactive product presentation.
+* Implemented API-based filtering for real-time product updates.
+* Styled with Tailwind CSS to maintain a clean, modern look.
+* Optimized for SEO and performance using Next.js features.
 
-## 🚀 How It Can Be Improved
+## 💡 How It Can Be Improved
 
-* 🛍 Add product detail modal or page.
-* 💾 Implement caching for faster load times.
-* 🌐 Add multi-language support.
-* 📊 Include analytics for product clicks.
+* 🗂 **Add Wishlist** – Allow users to save favorite wines.
+* 🛒 **Cart & Checkout** – Enable complete e-commerce functionality.
+* 🌍 **Multi-language Support** – Cater to international customers.
+* 📦 **Infinite Scrolling** – Smooth product loading without pagination.
 
-## 🐞 Issues
+## 🖼 Preview
 
-* Filtering might require debounce to prevent excessive API calls.
-* Carousel performance with large datasets should be monitored.
+![Wine Store Preview](preview.png)
 
-## 📸 Preview
+## 🎥 Demo Video
 
-![Product Slider Demo](preview.png)
+[Watch the Demo](demo.mp4)
 
-## 🎥 Video
+---
 
-[Watch the Demo](demo-link)
+🍇 Enjoy exploring and sipping your way through our fine collection!
