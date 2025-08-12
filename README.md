@@ -1,25 +1,52 @@
-# Wine
+# 🛒 Product Slider with Filter — Next.js 15.5 + Embla Carousel
 
-## Installation
+## ✨ Features
 
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   
-2. Install dependencies:
-   ```bash
-   npm install
+* 🔍 **Product Filtering** — Browse products easily with a dynamic API filter.
+* 🎠 **Embla Carousel Integration** — Smooth, mobile-friendly product slider.
+* ⚡ **Next.js 15.5** — Fast rendering and routing.
+* 🎯 **Responsive Design** — Works across devices.
+* 📦 **Reusable Components** — Modular and maintainable structure.
 
-3. Run the project:
-   ```bash
-   npm start
+## 🛠 Technologies
 
-## Contributing
+* **Next.js 15.5** — Latest version for optimal performance.
+* **TypeScript** — Strict typing for safety.
+* **Embla Carousel** — Lightweight slider library.
+* **API Fetching** — Dynamic product loading.
+* **CSS Modules/Tailwind CSS** — Flexible styling.
 
-Feel free to fork the repository and create pull requests for improvements.
+## 📋 Process
 
-## License
+1. Set up Next.js 15.5 project.
+2. Install and configure Embla Carousel.
+3. Create product API endpoint for fetching data.
+4. Implement filtering logic for products.
+5. Integrate carousel to display products.
+6. Add responsive styling.
 
-MIT License - see the LICENSE file for details.
+## ⚙️ How It Works
 
-You can customize this template for your project if needed. Let me know if you need any tweaks!
+* The **API** returns a filtered list of products based on the selected category.
+* **Embla Carousel** renders these products in a smooth, swipeable slider.
+* The **filter component** updates the carousel in real-time.
+
+## 🚀 How It Can Be Improved
+
+* 🛍 Add product detail modal or page.
+* 💾 Implement caching for faster load times.
+* 🌐 Add multi-language support.
+* 📊 Include analytics for product clicks.
+
+## 🐞 Issues
+
+* Filtering might require debounce to prevent excessive API calls.
+* Carousel performance with large datasets should be monitored.
+
+## 📸 Preview
+
+![Product Slider Demo](preview.png)
+
+## 🎥 Video
+
+[Watch the Demo](demo-link)
